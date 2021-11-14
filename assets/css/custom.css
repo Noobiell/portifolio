@@ -44,6 +44,7 @@ body::-webkit-scrollbar-thumb {
     color: #fff;
     padding: 5px;
     border-bottom: 1px solid transparent;
+    font-size: 18px;
     transition: 0.5s;
 }
 .link-nav:hover{
@@ -138,6 +139,10 @@ body::-webkit-scrollbar-thumb {
     padding: 15px;
     box-shadow: 2px 2px 3px rgba(48, 48, 48, 0.452);
     margin-bottom: 30px;
+    transition: 0.5s;
+}
+.container-projetos:hover{
+    box-shadow: 2px 2px 3px rgb(0, 33, 139);
 }
 .container-projetos::-webkit-scrollbar {
     height: 100%;
@@ -154,7 +159,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 20px;
 }
 .titulo-projetos{
-    color: rgb(76, 3, 194);
+    color: rgb(0, 33, 139);
     text-align: center;
 }
 .texto-projetos{
@@ -172,7 +177,7 @@ body::-webkit-scrollbar-thumb {
 }
 .titulo-conhecimentos{
     color: rgb(76, 3, 194);
-    font-size: 50px;
+    font-size: 40px;
 }
 .texto-conhecimentos{
     color: rgb(218, 218, 218);
@@ -192,6 +197,11 @@ body::-webkit-scrollbar-thumb {
     background: rgb(15, 15, 15);
     padding: 35px;
     border-radius: 20px;
+    border: 1px solid transparent;
+    transition: 0.5s;
+}
+.container-tecnologia:hover{
+    border: 1px solid rgb(0, 33, 139);
 }
 .icone-conhecimentos{
     width: 60px;
@@ -216,11 +226,12 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 20px;
+    gap: 60px;
 }
 .rede{
     color: #fff;
     font-size: 25px;
-    margin: 30px 45px 0px 0px;
 }
 .icon-contato{
     color: rgb(96, 26, 177);
@@ -259,7 +270,13 @@ body::-webkit-scrollbar-thumb {
     .item-nav{
         margin: 10px 0px;
     }
-
+    /*QUEM SOU*/
+    .img-avatar{
+        display: none;
+    }
+    .texto-quemSou{
+        padding: 20px 10px 50px 10px;
+    }
     /*PROJETOS*/
     .container-projetos{
         height: 250px;
@@ -273,11 +290,21 @@ body::-webkit-scrollbar-thumb {
     .icone-conhecimentos{
         width: 40px;
     }
+    /*CONTATO*/
+    .redes-sociais{
+        gap: 15px;
+    }
+    .rede{
+        font-size: 20px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px){
     .item-nav{
         margin: 10px 0px;
+    }
+    .img-avatar{
+        display: none;
     }
     .container-conhecimentos{
         margin-bottom: 20px;

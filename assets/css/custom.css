@@ -228,6 +228,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     margin-top: 20px;
     gap: 60px;
+    padding-left: 0px;
 }
 .rede{
     color: #fff;
@@ -292,7 +293,10 @@ body::-webkit-scrollbar-thumb {
     }
     /*CONTATO*/
     .redes-sociais{
-        gap: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
     }
     .rede{
         font-size: 20px;

@@ -1,0 +1,1 @@
+window.conhecimentos = new Conhecimento;
